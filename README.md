@@ -12,7 +12,7 @@ The goal of the CertiCoq project is to build an end-to-end verified compiler for
 
 Large parts of the CertiCoq compiler have been verified whereas others are in the process of being verified.
 
-You can find CertiCoq's souce code on [GitHub](https://github.com/CertiCoq/certicoq). CertiCoq is part of the [DeepSpec](https://deepspec.org) project.
+You can find CertiCoq's source code on [GitHub](https://github.com/CertiCoq/certicoq). CertiCoq is part of the [DeepSpec](https://deepspec.org) project.
 
 ## Current Members
 
