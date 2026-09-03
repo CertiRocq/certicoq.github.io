@@ -1,18 +1,18 @@
 <p align="center">
-<img src="certicoq.png" alt="CertiCoq" width="200px"/>
+<img src="certirocq.png" alt="CertiRocq" width="200px"/>
 <img src="Blank300.png" alt="blank" width="200px"/>
 <img src="deepspec-logo-300dpi.png" width="100px"/>
 </p>
 
 ## Overview
 
-CertiCoq is a compiler for Gallina, the specification language of the [Coq proof assistant](https://coq.inria.fr/refman/index.html). CertiCoq targets Clight, a subset of the C language that can be compiled with any C compiler, including the [CompCert](http://compcert.org) verified compiler.
+CertiRocq (formerly CertiCoq) is a compiler for Gallina, the specification language of the [Rocq Prover](https://rocq-prover.org). CertiRocq targets WebAssembly and Clight, a subset of the C language that can be compiled with any C compiler, including the [CompCert](http://compcert.org) verified compiler.
 
-The goal of the CertiCoq project is to build an end-to-end verified compiler for Gallina, bridging the gap between formally verified source programs and their compiled executables.  
+The goal of the CertiRocq project is to build an end-to-end verified compiler for Gallina, bridging the gap between formally verified source programs and their compiled executables.  
 
-Large parts of the CertiCoq compiler have been verified whereas others are in the process of being verified.
+Large parts of the CertiRocq compiler have been verified whereas others are in the process of being verified.
 
-You can find CertiCoq's source code on [GitHub](https://github.com/CertiCoq/certicoq). CertiCoq is part of the [DeepSpec](https://deepspec.org) project.
+You can find CertiRocq's source code on [GitHub](https://github.com/CertiRocq/certirocq). See [INSTALL.md](https://github.com/CertiRocq/certirocq/blob/main/INSTALL.md) for installation instructions. CertiRocq is part of the [DeepSpec](https://deepspec.org) project.
 
 ## Current Members
 
@@ -24,14 +24,19 @@ Abhishek Anand, Anvay Grover, John Li, Greg Morrisett, Randy Pollack, Olivier Sa
 
 ## Documentation
 
-The [CertiCoq Wiki](https://github.com/PrincetonUniversity/certicoq/wiki) has instructions for using the [CertiCoq plugin](https://github.com/PrincetonUniversity/certicoq/wiki/The-CertiCoq-plugin) to compile Gallina to C and interfacing with the generated C code.
+The [CertiRocq Wiki](https://github.com/CertiRocq/certirocq/wiki) has instructions for using the [CertiRocq plugin](https://github.com/CertiRocq/certirocq/wiki/The-CertiRocq-plugin) to compile Gallina to C and interfacing with the generated C code.
 
-The Wiki also gives an [overview](https://github.com/PrincetonUniversity/certicoq/wiki/The-CertiCoq-pipeline) of the compiler and its verification status. 
+The Wiki also gives an [overview](https://github.com/CertiRocq/certirocq/wiki/The-CertiRocq-pipeline) of the compiler and its verification status.
+
+You can also find end-to-end examples in [tests/programs/tests.v](https://github.com/CertiRocq/certirocq/blob/main/tests/programs/tests.v) and [tests/axioms/tests.v](https://github.com/CertiRocq/certirocq/blob/main/tests/axioms/tests.v).
 
 
 ## Publications 
 
+- *[Machine-Generated, Machine-Checked Proofs for a Verified Compiler (Experience Report)](https://dl.acm.org/doi/10.1145/3828700)*, by Zoe Paraskevopoulou. Proc. ACM Program. Lang. Vol. 10, No. ICFP, Article 302 (20 pages), August 2026.
+
 - *[A Verified Foreign Function Interface between Coq and C](https://doi.org/10.1145/3704860)*, by Joomy Korkut, Kathrin Stark, and Andrew W. Appel. Proc. ACM Program. Lang. 9, POPL, Article 24 (31 pages), January 2025.
+
 - *[Compiling with Continuations, Correctly](https://doi.org/10.1145/3485491)*, by Zoe Paraskevopoulou and Anvay Grover, Proc. ACM Program. Lang. Vol. 5, No. OOPSLA, Article 114 (29 pages), October 2021.
 
 - *[Compositional Optimizations for CertiCoq](https://doi.org/10.1145/3473591)*, by Zoe Paraskevopoulou, John M. Li, and Andrew W. Appel, Proc. ACM Program. Lang. Vol. 5, No. ICFP, Article 86 (30 pages), August 2021.
@@ -58,8 +63,8 @@ The project has been supported by the National Science Foundation, grants CCF-14
 
 ## License 
 
-CertiCoq is open source and distributed under the [MIT license](LICENSE.md).
+CertiRocq is open source and distributed under the [MIT license](https://github.com/CertiRocq/certirocq/blob/main/LICENSE.md).
 
 ## Bugs 
 
-We use github's [issue tracker](https://github.com/PrincetonUniversity/certicoq/issues) to keep track of bugs and feature requests.
+We use GitHub's [issue tracker](https://github.com/CertiRocq/certirocq/issues) to keep track of bugs and feature requests.
